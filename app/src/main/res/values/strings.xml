@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Invop</string>
+    <string name="text_email">Correo</string>
+    <string name="text_password">Contraseña</string>
+    <string name="text_desc_login">Controla y administra tu inventario rapido, facil y seguro</string>
+    <string name="text_forgot_password">Olvidaste tu contraseña?</string>
+    <string name="text_scan">Escaner</string>
+    <string name="text_back">Volver</string>
+</resources>

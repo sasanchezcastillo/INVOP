@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3E4095</color>
+    <color name="colorPrimaryDark">#505186</color>
+    <color name="colorAccent">#03AAEB</color>
+    <color name="colorAccentDark">#1885CD</color>
+    <color name="colorAccentOption">#34B64B</color>
+    <color name="text_color_disable">#EEBDBDBD</color>
+    <color name="text_color_divider">#BDBDBD</color>
+    <color name="input_scan">#EECCCACA</color>
+    <color name="text_color_ebnable">#323432</color>
+    <color name="white">@android:color/white</color>
+    <color name="text_primary_color">#212121</color>
+    <!--hola-->
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.View.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        android:gravity="center_vertical"
+        android:padding="30dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/bg_login"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="200dp"
+            android:src="@drawable/invop"
+            android:layout_height="65dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_desc_login"
+            android:textColor="@color/text_color_ebnable"
+            android:textAlignment="center"
+            android:fontFamily="@font/avenir_medium"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"/>
+
+
+        <EditText
+            android:id="@+id/editext_name_user"
+            style="@style/Editext_login"
+            android:inputType="textEmailAddress"
+            android:hint="@string/text_email"
+            android:textColorHint="@color/text_color_disable"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/avenir_light"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/editext_password"
+            style="@style/Editext_login"
+            android:layout_marginTop="18dp"
+            android:inputType="textPassword"
+            android:hint="@string/text_password"
+            android:textColorHint="@color/text_color_disable"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/avenir_light"
+            android:paddingLeft="10dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_forgot_password"
+            android:textColor="@color/text_color_disable"
+            android:textAlignment="center"
+            android:fontFamily="@font/avenir_light"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"/>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:id="@+id/progress_login"
+            android:layout_width="wrap_content"
+            android:indeterminateTint="@color/colorAccentDark"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresar"
+            android:fontFamily="@font/avenir_medium"
+            android:textColor="@color/text_color_ebnable"
+            android:background="@drawable/selector_button_login"/>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

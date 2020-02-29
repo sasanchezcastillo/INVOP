@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:id="@+id/img_item"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+
+    <RelativeLayout
+        android:id="@+id/content_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/img_item">
+
+        <TextView
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Description"
+            android:id="@+id/name_product"
+            android:textColor="@color/text_color_ebnable"
+            android:fontFamily="@font/avenir_light"/>
+
+        <TextView
+            android:layout_below="@+id/name_product"
+            android:layout_width="wrap_content"
+            android:maxWidth="230dp"
+            android:layout_height="30dp"
+            android:maxHeight="30dp"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:id="@+id/description"
+            android:text="Description"
+            android:textColor="@color/text_color_ebnable"
+            android:fontFamily="@font/avenir_light"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:text="Description"
+            android:id="@+id/last_update"
+            android:textColor="@color/text_color_ebnable"
+            android:fontFamily="@font/avenir_light"/>
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/content_data"
+        android:layout_marginLeft="52dp"
+        android:background="@color/text_color_disable"/>
+
+
+
+</RelativeLayout>

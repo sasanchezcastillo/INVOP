@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="Editext_login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:background">@drawable/bg_editext_login</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="splashTheme" parent="FullscreenTheme">
+        <item name="android:windowBackground">@drawable/splash_invop</item>
+    </style>
+
+    <style name="Dashboard" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="input_search">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:drawableLeft">@drawable/ic_search_black_24dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_imput_search</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:layout_marginRight">35dp</item>
+        <item name="android:hint">@string/name_input_search</item>
+        <item name="android:font">@font/avenir_light</item>
+        <item name="android:drawablePadding">11dp</item>
+
+
+    </style>
+
+    <style name="TextTitle_14sp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_color_ebnable</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <string name="name_input_search">Buscar</string>
+</resources>

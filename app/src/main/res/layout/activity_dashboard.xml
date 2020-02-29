@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoShadowHeight="40dp"
+    sothree:umanoParallaxOffset="60dp"
+    sothree:umanoPanelHeight="300dp"
+    sothree:umanoClipPanel="true"
+    sothree:umanoOverlay="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/action_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SALIR"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_margin="12dp"
+                android:padding="8dp"
+                android:textColor="@color/text_primary_color"
+                android:drawableTop="@drawable/ic_settings_power_black_24dp"
+                />
+            <RelativeLayout
+                android:id="@+id/initial_scan_bar_code"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_content_scan"
+                android:padding="8dp"
+                android:elevation="5dp"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_scan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_scan"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_scan"
+                    android:textAllCaps="true"
+                    android:textSize="14sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenir_medium"
+                    android:layout_below="@+id/img_scan"/>
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/content_code_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:drawablePadding="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorAccentDark"
+                android:padding="5dp"
+                android:fontFamily="@font/avenir_medium"
+                android:textStyle="bold"
+                android:background="@drawable/bg_code_scan"/>
+
+
+            <Button
+                android:id="@+id/button_edit_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nuevo Producto"
+                android:enabled="true"
+                android:padding="8dp"
+                android:background="@drawable/selector_button_login"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="false"
+        android:background="@drawable/bg_sliding_layout"
+        android:id="@+id/dragView">
+
+        <TextView
+            android:id="@+id/show_action_close"
+            android:layout_width="90dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/indicator_swipe"/>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="No hay Datos"
+            android:fontFamily="@font/avenir_medium"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_data_items"/>
+
+    </LinearLayout>
+
+
+
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
